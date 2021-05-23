@@ -6,22 +6,24 @@
 
 body {
     background-color: black;
-    border: 1px solid black;
+    margin: 0;
+    padding: 0;
 }
+
+div.juego {}
 
 div#word {
     position: relative;
+    display: inline-block;
 }
 
-div.row{
+div.row {
     height: 30px;
 }
 
 div.row div {
-  
     width: 30px;
     height: 30px;
-    border: 1px solid black;
     display: inline-block;
 }
 
@@ -33,14 +35,34 @@ div.coin {
     background: url(../img/coin.gif) no-repeat center;
 }
 
+
+
 div#pacman {
     background: url(../img/Pacman.gif) no-repeat center;
     background-size: cover;
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 1px;
-    left: 1px;
 }
 
 div.empty {}
+
+div#score {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin: 10px;
+    position: relative;
+}
+
+div.cherry{
+    background: url(../img/cereza.gif);
+    background-repeat:  no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
